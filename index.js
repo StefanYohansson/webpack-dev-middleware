@@ -64,7 +64,7 @@ module.exports = function wdm(compiler, opts) {
     toDisk(context);
   }
 
-  setFs(context, compiler);
+  setFs(context, compiler, false);
 
   return Object.assign(middleware(context), {
     close(callback) {
